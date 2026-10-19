@@ -1,8 +1,107 @@
 [
- {"claim": "CFTC sent request-for-comment on compute futures to OMB (2026-08-17); 30-60 day comment period expected", "source": "Bloomberg via The Latent", "url": "https://thelatent.co/policy/cftc-seeks-public-comment-on-ai-compute-futures", "confidence": "high", "run_date": "2026-10-19"},
- {"claim": "CME + Silicon Data plan H100/B200 compute futures listing 2026-10-05 pending CFTC approval; 36-month curve", "source": "CME media room / Axios", "url": "https://www.axios.com/2026/08/12/ai-futures-compute-cme", "confidence": "high", "run_date": "2026-10-19"},
- {"claim": "Nodal Exchange + Compute Desk announce GPU compute futures (2026-09-03), settling against blended daily indexes", "source": "Business Wire", "url": "https://www.businesswire.com/news/home/20260903208046/en/", "confidence": "high", "run_date": "2026-10-19"},
- {"claim": "Architect AX already trades compute futures outside the US; US exchange pending CFTC review", "source": "architect.co press", "url": "https://architect.co/resources/press/architect-ornn-compute-futures/", "confidence": "high", "run_date": "2026-10-19"},
- {"claim": "Four GPU price indexes diverged by ~$1/hr on the same accelerators in the same window (2026)", "source": "KuCoin news / LinkedIn analyses", "url": null, "confidence": "medium", "run_date": "2026-10-19"},
- {"claim": "Spot GPU rental spread ~25x: $0.29/hr budget spot to $8+/hr hyperscaler", "source": "local-ai-zone / vast.ai pricing", "url": "https://vast.ai/pricing", "confidence": "medium", "run_date": "2026-10-19"}
+ {
+  "claim": "Compute futures listed and began trading on NYMEX (2026-10-05): Silicon Data H100 and B200 Rental Index futures, one month's rent per contract",
+  "source": "AGI Watch (secondary; CME SER-9785 primary)",
+  "url": "https://agiwatch.ai/signals/sig-2026-10-05-cme-launches-gpu-compute-futures",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "First-week volume/open interest on CME compute futures not yet publicly reported; liquidity is the validation metric",
+  "source": "absence of public data",
+  "url": null,
+  "confidence": "low",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "CFTC Request for Comment on listing of compute derivatives closes 2026-10-20 (Federal Register 2026-08-21)",
+  "source": "CFTC press release 9286-26",
+  "url": "https://www.cftc.gov/PressRoom/PressReleases/9286-26",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Architect launched Liquid Inference, a real-time exchange for AI inference, expanding the AI Exchange stack (2026-10-07, pending regulatory review)",
+  "source": "PR Newswire",
+  "url": "https://www.prnewswire.com/news-releases/architect-financial-technologies-launches-liquid-inference-a-real-time-exchange-for-ai-inference-302900862.html",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "CME + Silicon Data plan H100/B200 compute futures listing 2026-10-05 pending CFTC approval; 36-month curve",
+  "source": "CME media room / Axios",
+  "url": "https://www.axios.com/2026/08/12/ai-futures-compute-cme",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "CFTC sent request-for-comment on compute futures to OMB (2026-08-17); RFC published 2026-08-19",
+  "source": "Bloomberg via The Latent / CFTC",
+  "url": "https://thelatent.co/policy/cftc-seeks-public-comment-on-ai-compute-futures",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Nodal Exchange + Compute Desk announce GPU compute futures (2026-09-03), settling against blended daily indexes",
+  "source": "Business Wire",
+  "url": "https://www.businesswire.com/news/home/20260903208046/en/",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Architect acquired a US Designated Contract Market and will launch the American Innovation Exchange, first CFTC-regulated venue for compute futures (2026-05-28)",
+  "source": "PR Newswire",
+  "url": "https://www.prnewswire.com/news-releases/architect-financial-technologies-to-launch-us-futures-exchange-for-compute-and-ai-commodities-following-dcm-acquisition-302784564.html",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Architect AX already trades compute futures outside the US (Bermuda venue, since January 2026); US exchange pending CFTC review",
+  "source": "architect.co press",
+  "url": "https://architect.co/resources/press/architect-ornn-compute-futures/",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "ICE x Ornn GPU compute futures announced, settled against Ornn Compute Price Index (OCPI, live on Bloomberg); launch date TBD, not yet launched as of 2026-10-19",
+  "source": "ICE IR",
+  "url": "https://ir.theice.com/press/news-details/2026/ICE-and-Ornn-to-Launch-GPU-Compute-Futures-Contracts/default.aspx",
+  "confidence": "high",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Ornn raised $33M seed led by a16z crypto (2026-06) to build GPU compute marketplace and secondary trading",
+  "source": "AI Wiki / Nexi",
+  "url": "https://aiwiki.ai/wiki/ornn",
+  "confidence": "medium",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Four GPU price indexes diverged by ~$1/hr on the same accelerators in the same window (2026)",
+  "source": "KuCoin news / LinkedIn analyses",
+  "url": null,
+  "confidence": "medium",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Spot GPU rental spread ~25x: $0.29/hr budget spot to $8+/hr hyperscaler",
+  "source": "local-ai-zone / vast.ai pricing",
+  "url": "https://vast.ai/pricing",
+  "confidence": "medium",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "GPU-collateralized private credit (~$500B Nvidia-linked structures) treats GPUs as infrastructure-grade collateral; assumptions untested through a cycle",
+  "source": "Stanford Tech Review",
+  "url": "https://stanfordtechreview.com/articles/what-is-gpu-collateralized-debt-nvidia-500b",
+  "confidence": "medium",
+  "run_date": "2026-10-19"
+ },
+ {
+  "claim": "Spot marketplaces (Vast.ai, VoltagePark, SF Compute, RunPod, Hyperbolic, et al.): no material moves week of 2026-10-19",
+  "source": "no-change confirmation",
+  "url": null,
+  "confidence": "low",
+  "run_date": "2026-10-19"
+ }
 ]
