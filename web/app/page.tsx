@@ -195,8 +195,10 @@ export default function Home() {
       </section>
 
       <footer className="muted small">
-        Last Myle Engineering · research, not investment advice · regenerates weekly from an
-        automated research pipeline.
+        <a href="https://www.lastmyle.co/research" target="_blank" rel="noreferrer">
+          Last Myle Engineering
+        </a>{" "}
+        · research, not investment advice · regenerates weekly from an automated research pipeline.
       </footer>
     </main>
   );
