@@ -1,7 +1,7 @@
 :root {
   --bg: #0b0e14;
   --fg: #e6e9ef;
-  --muted: #8b93a7;
+  --muted: #9aa3b8;
   --accent: #4f8cff;
   --warn: #ff8a4f;
   --danger: #ff5f6d;
@@ -16,40 +16,63 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  padding: 2rem;
-  max-width: 1200px;
+  line-height: 1.6;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: 880px;
   margin: 0 auto;
 }
 
-h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
-.subtitle { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+header { margin-bottom: 1.5rem; }
+h1 { font-size: 1.75rem; letter-spacing: -0.01em; margin-bottom: 0.35rem; }
+h1 .tld { color: var(--accent); }
+.subtitle { color: var(--muted); font-size: 0.95rem; max-width: 62ch; }
 
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
-
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; }
-.card h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.card h2 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
 
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-th { text-align: left; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0.5rem; border-bottom: 1px solid var(--border); }
-td { padding: 0.5rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
+th { text-align: left; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
+td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
 tr:last-child td { border-bottom: none; }
 
-.hotspot { color: var(--danger); font-weight: 700; }
-.warm { color: var(--warn); font-weight: 600; }
-.cool { color: var(--ok); }
+/* rendered markdown inside cards */
+.pre { white-space: pre-wrap; max-width: 70ch; font-size: 0.95rem; }
+.pre strong { color: var(--fg); font-weight: 650; }
+.pre em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+.signals { list-style: none; }
+.signals li { padding: 0.65rem 0; border-bottom: 1px solid var(--border); max-width: 75ch; }
+.signals li:last-child { border-bottom: none; }
+
+.badge {
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 0.12rem 0.5rem; border-radius: 999px; vertical-align: 1px;
+}
+.badge.high   { background: rgba(79,201,140,0.15); color: var(--ok); }
+.badge.medium { background: rgba(255,138,79,0.15); color: var(--warn); }
+.badge.low    { background: rgba(255,95,109,0.15); color: var(--danger); }
+
+.digest { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.digest:last-child { border-bottom: none; }
+.digest h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.digest .pre { font-size: 0.9rem; color: var(--fg); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 .muted { color: var(--muted); }
-
-.badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.75rem; border: 1px solid var(--border); }
-.badge.neg { color: var(--danger); border-color: var(--danger); }
-.badge.zero { color: var(--muted); }
-.badge.pos { color: var(--ok); border-color: var(--ok); }
-
-.bar-track { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; min-width: 80px; }
-.bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
-.bar-fill.hot { background: var(--danger); }
-
-a { color: #7fb0ff; }
-a:visited { color: #a89aff; }
-
-.digest-body { white-space: pre-wrap; font-size: 0.9rem; line-height: 1.55; color: var(--fg); }
-footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; }
+.small { font-size: 0.8rem; }
+footer { margin-top: 2.5rem; text-align: center; }

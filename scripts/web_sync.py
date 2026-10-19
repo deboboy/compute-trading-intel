@@ -34,6 +34,21 @@ if os.path.isdir(wdir):
         body = read(os.path.join(wdir, fn))
         first = body.lstrip().splitlines()[0] if body.strip() else ""
         title = first[2:].strip() if first.startswith("# ") else fn
+        # strip the markdown heading; convert heading/table/bullet lines to readable prose
+        lines = []
+        for ln in body.splitlines():
+            s = ln.rstrip()
+            if s.startswith("# "):
+                continue
+            if s.startswith("## "):
+                lines.append("— " + s[3:].strip())
+            elif s.startswith("|"):
+                continue  # table syntax does not render; the claims live in signals.json
+            elif s.startswith("- "):
+                lines.append("• " + s[2:].strip())
+            else:
+                lines.append(s)
+        body = "\n".join(lines).strip()
         links = []
         seen = set()
         for u in re.findall(r"\[([^\]]+)\]\((https?://[^)]+)\)", body) + [(None, u) for u in re.findall(r"(?<![(])https?://[^\s)>\]]+", body)]:
@@ -67,6 +82,7 @@ if not isinstance(indexes, list):
     indexes = []
 
 out = {
+    # honest date: latest digest date, else today when any brief content exists, else ""
     "updated": max([d["date"] for d in digests], default=""),
     "executive_summary": summary,
     "indexes": indexes,
