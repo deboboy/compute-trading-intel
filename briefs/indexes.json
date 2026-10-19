@@ -1,0 +1,6 @@
+[
+ {"name": "Silicon Data", "partner_exchange": "CME Group", "note": "Settlement source for CME H100/B200 compute futures; $30M Series A"},
+ {"name": "Ornn (OCPI)", "partner_exchange": "Architect / AI Exchange", "note": "First sustained compute benchmark; $5.7M seed"},
+ {"name": "Compute Desk", "partner_exchange": "Nodal Exchange", "note": "Blended daily indexes from exclusive private-transaction coverage"},
+ {"name": "SemiAnalysis", "partner_exchange": null, "note": "Monthly H100 1-yr contract survey index, 100+ participants"}
+]

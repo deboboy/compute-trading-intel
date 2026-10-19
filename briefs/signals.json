@@ -1,0 +1,8 @@
+[
+ {"claim": "CFTC sent request-for-comment on compute futures to OMB (2026-08-17); 30-60 day comment period expected", "source": "Bloomberg via The Latent", "url": "https://thelatent.co/policy/cftc-seeks-public-comment-on-ai-compute-futures", "confidence": "high", "run_date": "2026-10-19"},
+ {"claim": "CME + Silicon Data plan H100/B200 compute futures listing 2026-10-05 pending CFTC approval; 36-month curve", "source": "CME media room / Axios", "url": "https://www.axios.com/2026/08/12/ai-futures-compute-cme", "confidence": "high", "run_date": "2026-10-19"},
+ {"claim": "Nodal Exchange + Compute Desk announce GPU compute futures (2026-09-03), settling against blended daily indexes", "source": "Business Wire", "url": "https://www.businesswire.com/news/home/20260903208046/en/", "confidence": "high", "run_date": "2026-10-19"},
+ {"claim": "Architect AX already trades compute futures outside the US; US exchange pending CFTC review", "source": "architect.co press", "url": "https://architect.co/resources/press/architect-ornn-compute-futures/", "confidence": "high", "run_date": "2026-10-19"},
+ {"claim": "Four GPU price indexes diverged by ~$1/hr on the same accelerators in the same window (2026)", "source": "KuCoin news / LinkedIn analyses", "url": null, "confidence": "medium", "run_date": "2026-10-19"},
+ {"claim": "Spot GPU rental spread ~25x: $0.29/hr budget spot to $8+/hr hyperscaler", "source": "local-ai-zone / vast.ai pricing", "url": "https://vast.ai/pricing", "confidence": "medium", "run_date": "2026-10-19"}
+]

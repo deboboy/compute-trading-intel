@@ -1,0 +1,71 @@
+{
+ "updated": "",
+ "executive_summary": "# Compute Trading \u2014 Market Landscape Brief\n\n**Date:** 2026-10-19 \u00b7 **Author:** Last Myle Engineering (Hermes research run) \u00b7 **Trigger:** Architect \"Compute Trading\" market-map infographic\n**Status:** Research dir of record; feeds the compute-trading-intel dashboard + cron.\n\n## 1. What this market is\n\nAI compute (GPU-hour rental prices on specific accelerators) is being financialized into a tradable asset class, on three converging layers:\n\n1. **Regulated derivatives** \u2014 listed futures & options on GPU rental prices.\n2. **Price benchmarks (indexes)** \u2014 daily indices of GPU rental rates that contracts settle against.\n3. **Spot/forward capacity platforms** \u2014 ~20+ marketplaces where physical compute trades OTC.\n\nThe infographic's map (Architect, Oct 2026) is directionally accurate but self-serving: Architect's own AI Exchange is highlighted in two of four categories. Independent verification below.\n\n## 2. Derivatives layer \u2014 verified state\n\n| Exchange | Partner index | Product | Status (as of 2026-10-19) |\n|---|---|---|---|\n| **CME Group** | Silicon Data | H100 + B200 monthly-rental futures, cash-settled, NYMEX, curve to 36 months | Announced 2026-08-11; listing planned **2026-10-05 pending CFTC approval** |\n| **Architect (AI Exchange / AX)** | Ornn | GPU-hour futures & options (H100/H200/B200/B300), monthly\u2192yearly; perpetual futures on metals/energy/power | Already trades compute futures **outside the US**; US exchange (post-DCM acquisition) pending CFTC review; site shows live spot tickers (H100 $2.35/hr, B200 $4.95/hr) |\n| **ICE** | \u2014 | Compute futures in development | No launch date |\n| **Nodal Exchange** | Compute Desk | GPU compute futures settling against Compute Desk blended daily indexes | Announced 2026-09-03; pending regulatory compliance |\n\n- CFTC sent a request-for-comment on compute futures to OMB (week of 2026-08-17); typical 30\u201360 day comment period. **Approval timing is the single biggest gating factor for the whole layer.**\n- Silicon Data raised $30M Series A tied to the CME contract.\n\n## 3. Index layer\n\nFour live GPU price indexes (three already on Bloomberg Terminal): **Silicon Data** (CME's settlement source), **Ornn** (OCPI; Architct/AX partner; raised $5.7M seed), **Compute Desk** (Nodal partner; exclusive private-transaction coverage), and **SemiAnalysis** (monthly H100 1-yr contract survey index, 100+ participants). Divergence is material \u2014 indices have differed by ~$1/hr on the same accelerator in the same window, so **which index you settle against changes the hedge result**. Index competition is the real battleground; the \"EFP\" (exchange-for-physical) card in the map is Architect+Compute Desk marketing a futures\u2192spot conversion network that has no verified independent footprint yet.\n\n## 4. Spot layer\n\n20+ OTC marketplaces confirmed active in 2026: hyperscaler-adjacent (Nvidia DGX Cloud Lepton, DigitalOcean), neoclouds (VoltagePark, CoreWeave-class), marketplaces (Vast.ai, Compute Exchange), decentralized (Akash, Clore.ai, Spheron, Aethir, SaladCloud, Render-class), and newer pure-play venues (SF Compute, Hyperbolic, RunPod, Prime Intellect, Andromeda, Shadeform, HydraHost, Ornn, Cudo Compute, Compute Desk). Live pricing spans ~$0.29/hr budget spot to $8+/hr hyperscaler \u2014 a ~25\u00d7 spread that is exactly why index providers and derivatives exist. Vast.ai publishes market-set pricing across 40+ DCs; aggregator trackers (aicomputetracker.com) maintain evidence-aware price histories.\n\n## 5. Market size & drivers\n\n- Architect cites ~$0\u2192trillion-scale global AI compute spend converging on a ~$1T+/yr AI infrastructure capex estimate by 2030; US derivatives market is the world's largest (~$0T displayed placeholder on site \u2014 treat marketing numbers skeptically).\n- Demand-side hedgers: frontier labs, hyperscalers, enterprise AI (buy-side); neoclouds, GPU-as-a-service, colos (sell-side); private credit underwriting datacenter debt (the real institutional wedge \u2014 lenders need a mark for GPU collateral).\n- Analogy: this is the 1980s oil-futures moment \u2014 spot markets existed, then indexes, then CME listing price risk.\n\n## 6. Assessment (invest lens, B2B/supply-chain/bootstrap)\n\n- **Conviction:** compute-as-asset-class is real, not vaporware \u2014 CME + Silicon Data launch timeline and Nodal/Compute Desk entry are primary-source verified. Liquidity, not regulation, is now the open question.\n- **Watch, don't commit:** first-month open interest on whichever product launches first is the validation metric (one analyst estimate: ~500 contracts/day = early validation).\n- **Narrowest wedges for a bootstrap shop:** (a) price-data aggregation/verification across the 20+ spot venues feeding the index debate; (b) risk tooling for private-credit GPU-collateral marks; (c) monitoring/intel products (this report). Avoid: becoming another marketplace, index administration (regulatory burden), or brokerage.\n- **Key risks:** index divergence undermines settlement trust; CFTC delay; GPU price deflation (B300 at $7.40/hr vs H100 $2.35/hr suggests curve is already steeply backwardated) making long-dated hedges expensive; concentration in a single index provider per exchange.\n\n## 7. Sources\n\n- CME/Silicon Data announcement (2026-08-11) \u2014 cmegroup.com media room; Axios (2026-08-12)\n- CFTC RFIC via OMB \u2014 Bloomberg (2026-08-17), The Latent summary\n- Architect/Ornn press release \u2014 architect.co/resources/press/architect-ornn-compute-futures/ (2026)\n- Nodal/Compute Desk \u2014 Business Wire (2026-09-03); Bloomberg (2026-09-03)\n- Silicon Data $30M Series A \u2014 techbeat.co; Ornn $5.7M seed \u2014 LinkedIn/pulse2news\n- Index divergence \u2014 KuCoin news; LinkedIn analyses (2026)\n- Spot pricing \u2014 vast.ai/pricing; aicomputetracker.com; local-ai-zone top-20 (2026)\n- Infographic \u2014 Architect \"Compute Trading\" (user-provided image)\n\n## 8. Monitoring plan (cron)\n\nTrack: CFTC approval status + comment period, CME launch/trading volumes, Nodal + ICE + Architect US launches, index methodology changes and divergence (Silicon Data/Ornn/Compute Desk/SemiAnalysis), spot-price moves on major venues, new marketplace entrants/consolidation, private-credit GPU-collateral deals. Weekly digest \u2192 dashboard.",
+ "indexes": [
+  {
+   "name": "Silicon Data",
+   "partner_exchange": "CME Group",
+   "note": "Settlement source for CME H100/B200 compute futures; $30M Series A"
+  },
+  {
+   "name": "Ornn (OCPI)",
+   "partner_exchange": "Architect / AI Exchange",
+   "note": "First sustained compute benchmark; $5.7M seed"
+  },
+  {
+   "name": "Compute Desk",
+   "partner_exchange": "Nodal Exchange",
+   "note": "Blended daily indexes from exclusive private-transaction coverage"
+  },
+  {
+   "name": "SemiAnalysis",
+   "partner_exchange": null,
+   "note": "Monthly H100 1-yr contract survey index, 100+ participants"
+  }
+ ],
+ "signals": [
+  {
+   "claim": "CFTC sent request-for-comment on compute futures to OMB (2026-08-17); 30-60 day comment period expected",
+   "source": "Bloomberg via The Latent",
+   "url": "https://thelatent.co/policy/cftc-seeks-public-comment-on-ai-compute-futures",
+   "confidence": "high",
+   "run_date": "2026-10-19"
+  },
+  {
+   "claim": "CME + Silicon Data plan H100/B200 compute futures listing 2026-10-05 pending CFTC approval; 36-month curve",
+   "source": "CME media room / Axios",
+   "url": "https://www.axios.com/2026/08/12/ai-futures-compute-cme",
+   "confidence": "high",
+   "run_date": "2026-10-19"
+  },
+  {
+   "claim": "Nodal Exchange + Compute Desk announce GPU compute futures (2026-09-03), settling against blended daily indexes",
+   "source": "Business Wire",
+   "url": "https://www.businesswire.com/news/home/20260903208046/en/",
+   "confidence": "high",
+   "run_date": "2026-10-19"
+  },
+  {
+   "claim": "Architect AX already trades compute futures outside the US; US exchange pending CFTC review",
+   "source": "architect.co press",
+   "url": "https://architect.co/resources/press/architect-ornn-compute-futures/",
+   "confidence": "high",
+   "run_date": "2026-10-19"
+  },
+  {
+   "claim": "Four GPU price indexes diverged by ~$1/hr on the same accelerators in the same window (2026)",
+   "source": "KuCoin news / LinkedIn analyses",
+   "url": null,
+   "confidence": "medium",
+   "run_date": "2026-10-19"
+  },
+  {
+   "claim": "Spot GPU rental spread ~25x: $0.29/hr budget spot to $8+/hr hyperscaler",
+   "source": "local-ai-zone / vast.ai pricing",
+   "url": "https://vast.ai/pricing",
+   "confidence": "medium",
+   "run_date": "2026-10-19"
+  }
+ ],
+ "digests": []
+}

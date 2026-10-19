@@ -1,0 +1,55 @@
+:root {
+  --bg: #0b0e14;
+  --fg: #e6e9ef;
+  --muted: #8b93a7;
+  --accent: #4f8cff;
+  --warn: #ff8a4f;
+  --danger: #ff5f6d;
+  --ok: #4fc98c;
+  --card: #141926;
+  --border: #232a3b;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+.subtitle { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; }
+.card h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
+
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0.5rem; border-bottom: 1px solid var(--border); }
+td { padding: 0.5rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+
+.hotspot { color: var(--danger); font-weight: 700; }
+.warm { color: var(--warn); font-weight: 600; }
+.cool { color: var(--ok); }
+.muted { color: var(--muted); }
+
+.badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.75rem; border: 1px solid var(--border); }
+.badge.neg { color: var(--danger); border-color: var(--danger); }
+.badge.zero { color: var(--muted); }
+.badge.pos { color: var(--ok); border-color: var(--ok); }
+
+.bar-track { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; min-width: 80px; }
+.bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+.bar-fill.hot { background: var(--danger); }
+
+a { color: #7fb0ff; }
+a:visited { color: #a89aff; }
+
+.digest-body { white-space: pre-wrap; font-size: 0.9rem; line-height: 1.55; color: var(--fg); }
+footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; }
