@@ -1,5 +1,61 @@
 [
  {
+  "claim": "CFTC RFC on compute derivatives (docket CFTC-2026-1850) closed 2026-10-20 with 107 comments published; docket status Closed for Comments",
+  "source": "Regulations.gov (primary)",
+  "url": "https://www.regulations.gov/docket/CFTC-2026-1850",
+  "confidence": "high",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "NativX comment letter (2026-10-02) proposes COIL benchmark / NxCI Methodology v7.5 to CFTC, addressing all 23 RFC questions",
+  "source": "Regulations.gov comment (primary)",
+  "url": "https://www.regulations.gov/comment/CFTC-2026-1850-0026",
+  "confidence": "high",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "New open-source index provider: Computable GPU Index (CGI) publishes independent USD/GPU-hour rates for H100, H200, B200, B300",
+  "source": "Product Hunt",
+  "url": "https://www.producthunt.com/products/computable-gpu-index-cgi",
+  "confidence": "medium",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "H100 rental spread near 4x across spot providers in October 2026 ($2.89 to $11+/hr), sustaining index-divergence risk",
+  "source": "ServerCalc",
+  "url": "https://servercalc.com/news/h100-rental-price-spread-2026/",
+  "confidence": "medium",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "Blackstone's Jas Khaira (2026-10-21) says AI-buildout debt fears are overblown, defending GPU-collateralized neocloud lending",
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+  "confidence": "medium",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "CME compute futures volume/open interest: no publicly reported figures as of 2026-10-26; liquidity remains the validation metric",
+  "source": "absence of public data",
+  "url": null,
+  "confidence": "low",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "ICE x Ornn GPU compute futures remain announced but not launched as of 2026-10-26",
+  "source": "no-change confirmation",
+  "url": null,
+  "confidence": "low",
+  "run_date": "2026-10-26"
+ },
+ {
+  "claim": "Spot marketplaces: no material pricing, capacity, or consolidation moves week of 2026-10-26",
+  "source": "no-change confirmation",
+  "url": null,
+  "confidence": "low",
+  "run_date": "2026-10-26"
+ },
+ {
   "claim": "Compute futures listed and began trading on NYMEX (2026-10-05): Silicon Data H100 and B200 Rental Index futures, one month's rent per contract",
   "source": "AGI Watch (secondary; CME SER-9785 primary)",
   "url": "https://agiwatch.ai/signals/sig-2026-10-05-cme-launches-gpu-compute-futures",

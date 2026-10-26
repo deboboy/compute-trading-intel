@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-19",
- "executive_summary": "**UPDATE 2026-10-19:** The CME \u00d7 Silicon Data H100 and B200 Rental Index futures **listed and began trading on NYMEX on 2026-10-05** \u2014 compute futures are live, no longer pending. First-week volume/OI not yet publicly reported (the validation metric to watch). Architect expanded the AI Exchange with **Liquid Inference**, a real-time exchange for AI inference (2026-10-07, pending regulatory review). The CFTC's Request for Comment on compute derivatives closes **2026-10-20** \u2014 an approval/next-step window opens now. ICE/Ornn futures remain announced but unlaunched.\n\nGPU-hour futures are now a listed asset class: CME \u00d7 Silicon Data slated H100/B200 futures for **2026-10-05 pending CFTC approval** (now live, see update above), Architect already trades compute futures outside the US, and Nodal \u00d7 Compute Desk entered 2026-09-03. Four price indexes (Silicon Data, Ornn, Compute Desk, SemiAnalysis) settle the same market and **diverged ~$1/hr** on identical accelerators \u2014 settlement-index choice materially changes hedge outcomes. Beneath them, 20+ spot marketplaces span a ~25\u00d7 price range ($0.29\u2013$8+/hr), the fragmentation that indexes and derivatives exist to fix.\n\n**Conviction:** real and verified, but pre-liquidity. **Validation metric:** first-month open interest on whichever contract launches first. **Key risk:** CFTC timing plus index divergence undermining settlement trust.\n\nThis is the 1980s oil-futures moment for compute: spot markets existed first, then benchmarks, then listed price risk.",
+ "updated": "2026-10-26",
+ "executive_summary": "**UPDATE 2026-10-26:** The CFTC's RFC on compute derivatives **closed 2026-10-20** with 107 published comments (docket CFTC-2026-1850) \u2014 including formal benchmark proposals (NativX COIL/NxCI) \u2014 moving the Commission from fact-finding toward a posture on compute-contract listing. The index layer is **fragmenting further**: a new open-source provider, the Computable GPU Index (CGI; H100/H200/B200/B300), joined Silicon Data, Ornn, Compute Desk, and SemiAnalysis, while spot H100 spreads near 4x ($2.89\u2013$11+/hr). Blackstone publicly defended GPU-collateralized neocloud lending (2026-10-21). CME volume/OI still unreported; ICE/Ornn still unlaunched.\n\n**UPDATE 2026-10-19:** The CME \u00d7 Silicon Data H100 and B200 Rental Index futures **listed and began trading on NYMEX on 2026-10-05** \u2014 compute futures are live, no longer pending. First-week volume/OI not yet publicly reported (the validation metric to watch). Architect expanded the AI Exchange with **Liquid Inference**, a real-time exchange for AI inference (2026-10-07, pending regulatory review). The CFTC's Request for Comment on compute derivatives closes **2026-10-20** \u2014 an approval/next-step window opens now. ICE/Ornn futures remain announced but unlaunched.\n\nGPU-hour futures are now a listed asset class: CME \u00d7 Silicon Data slated H100/B200 futures for **2026-10-05 pending CFTC approval** (now live, see update above), Architect already trades compute futures outside the US, and Nodal \u00d7 Compute Desk entered 2026-09-03. Four price indexes (Silicon Data, Ornn, Compute Desk, SemiAnalysis) settle the same market and **diverged ~$1/hr** on identical accelerators \u2014 settlement-index choice materially changes hedge outcomes. Beneath them, 20+ spot marketplaces span a ~25\u00d7 price range ($0.29\u2013$8+/hr), the fragmentation that indexes and derivatives exist to fix.\n\n**Conviction:** real and verified, but pre-liquidity. **Validation metric:** first-month open interest on whichever contract launches first. **Key risk:** CFTC timing plus index divergence undermining settlement trust.\n\nThis is the 1980s oil-futures moment for compute: spot markets existed first, then benchmarks, then listed price risk.",
  "indexes": [
   {
    "name": "Silicon Data",
@@ -24,6 +24,62 @@
   }
  ],
  "signals": [
+  {
+   "claim": "CFTC RFC on compute derivatives (docket CFTC-2026-1850) closed 2026-10-20 with 107 comments published; docket status Closed for Comments",
+   "source": "Regulations.gov (primary)",
+   "url": "https://www.regulations.gov/docket/CFTC-2026-1850",
+   "confidence": "high",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "NativX comment letter (2026-10-02) proposes COIL benchmark / NxCI Methodology v7.5 to CFTC, addressing all 23 RFC questions",
+   "source": "Regulations.gov comment (primary)",
+   "url": "https://www.regulations.gov/comment/CFTC-2026-1850-0026",
+   "confidence": "high",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "New open-source index provider: Computable GPU Index (CGI) publishes independent USD/GPU-hour rates for H100, H200, B200, B300",
+   "source": "Product Hunt",
+   "url": "https://www.producthunt.com/products/computable-gpu-index-cgi",
+   "confidence": "medium",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "H100 rental spread near 4x across spot providers in October 2026 ($2.89 to $11+/hr), sustaining index-divergence risk",
+   "source": "ServerCalc",
+   "url": "https://servercalc.com/news/h100-rental-price-spread-2026/",
+   "confidence": "medium",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "Blackstone's Jas Khaira (2026-10-21) says AI-buildout debt fears are overblown, defending GPU-collateralized neocloud lending",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+   "confidence": "medium",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "CME compute futures volume/open interest: no publicly reported figures as of 2026-10-26; liquidity remains the validation metric",
+   "source": "absence of public data",
+   "url": null,
+   "confidence": "low",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "ICE x Ornn GPU compute futures remain announced but not launched as of 2026-10-26",
+   "source": "no-change confirmation",
+   "url": null,
+   "confidence": "low",
+   "run_date": "2026-10-26"
+  },
+  {
+   "claim": "Spot marketplaces: no material pricing, capacity, or consolidation moves week of 2026-10-26",
+   "source": "no-change confirmation",
+   "url": null,
+   "confidence": "low",
+   "run_date": "2026-10-26"
+  },
   {
    "claim": "Compute futures listed and began trading on NYMEX (2026-10-05): Silicon Data H100 and B200 Rental Index futures, one month's rent per contract",
    "source": "AGI Watch (secondary; CME SER-9785 primary)",
@@ -131,6 +187,12 @@
   }
  ],
  "digests": [
+  {
+   "title": "Compute Trading Intel \u2014 Week of 2026-10-26",
+   "date": "2026-10-26",
+   "links": [],
+   "body": "\u2014 Executive summary\nThe week's pivotal event was regulatory: the CFTC's Request for Comment on compute derivatives (docket CFTC-2026-1850) closed 2026-10-20 with 107 published comments, including formal benchmark proposals (e.g. NativX's COIL/NxCI design) \u2014 the Commission now moves from information-gathering toward a posture on compute-contract listing. The index layer is fragmenting further: a new open-source provider (Computable GPU Index, CGI) publishes independent H100/H200/B200/B300 rates, while spot-layer data shows H100 rental spreads near 4x across providers ($2.89\u2013$11+/hr), underscoring the index-divergence risk flagged in prior weeks. On the capital layer, Blackstone publicly pushed back on AI-buildout debt fears (2026-10-21), defending GPU-collateralized neocloud lending. Still unconfirmed: CME compute futures volume/open interest (no public figures found), and ICE\u00d7Ornn futures remain unlaunched.\n\n\u2014 Signals\n\n\n---\nResearch, not investment advice."
+  },
   {
    "title": "Compute Trading Intel \u2014 Week of 2026-10-19",
    "date": "2026-10-19",
