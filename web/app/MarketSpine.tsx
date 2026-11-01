@@ -16,13 +16,13 @@ const STATUS_COLOR: Record<SpineNode["status"], string> = {
   active: "#2ecc71",
   announced: "#ff8a4f",
   pending: "#ff8a4f",
-  watch: "#8b93a7",
+  watch: "#5c6672",
 };
 
 const STAGES: { label: string; x: number; color: string }[] = [
-  { label: "Spot marketplaces (20+)", x: 90, color: "#4f8cff" },
-  { label: "Price indexes (4)", x: 480, color: "#b78cff" },
-  { label: "Derivatives exchanges", x: 870, color: "#ffd54f" },
+  { label: "Spot marketplaces (20+)", x: 90, color: "#1d6fd4" },
+  { label: "Price indexes (4)", x: 480, color: "#8b5cf6" },
+  { label: "Derivatives exchanges", x: 870, color: "#d4a017" },
 ];
 
 export default function MarketSpine({
@@ -44,16 +44,16 @@ export default function MarketSpine({
         <svg viewBox="0 0 960 190" style={{ width: "100%", minWidth: 760, height: "auto" }}>
           <defs>
             <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6" fill="none" stroke="#999" strokeWidth="1.2" />
+              <path d="M0,0 L6,3 L0,6" fill="none" stroke="#9ca3af" strokeWidth="1.2" />
             </marker>
           </defs>
-          <line x1="120" y1="60" x2="820" y2="60" stroke="#999" strokeWidth="1.2" markerEnd="url(#arrow)" />
-          <line x1="820" y1="60" x2="120" y2="60" stroke="#999" strokeWidth="1.2" strokeDasharray="3 4" opacity="0.4" />
+          <line x1="120" y1="60" x2="820" y2="60" stroke="#9ca3af" strokeWidth="1.2" markerEnd="url(#arrow)" />
+          <line x1="820" y1="60" x2="120" y2="60" stroke="#9ca3af" strokeWidth="1.2" strokeDasharray="3 4" opacity="0.4" />
 
           {STAGES.map((st) => (
             <g key={st.label}>
               <circle cx={st.x} cy={60} r={14} fill={st.color} />
-              <text x={st.x} y={95} textAnchor="middle" fontSize="12.5" fill="#ccc" fontWeight="600">
+              <text x={st.x} y={95} textAnchor="middle" fontSize="12.5" fill="#374151" fontWeight="600">
                 {st.label}
               </text>
             </g>
