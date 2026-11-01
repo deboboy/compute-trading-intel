@@ -36,12 +36,17 @@ export default function MarketSpine({
     derivs: [660, 930],
   };
   const byLayer = (l: string) => nodes.filter((n) => n.layer === l);
+  const maxRows = Math.max(
+    ...(["spot", "index", "derivs"] as const).map((l) => Math.min(byLayer(l).length, 7))
+  );
+  const legendY = 125 + maxRows * 17 + 14;
+  const svgH = legendY + 14;
 
   return (
     <div className="card" style={{ padding: "1.25rem 1.5rem 1.25rem" }}>
       <h2>Market structure</h2>
       <div style={{ overflowX: "auto", paddingBottom: "0.5rem" }}>
-        <svg viewBox="0 0 960 190" style={{ width: "100%", minWidth: 760, height: "auto" }}>
+        <svg viewBox={`0 0 960 ${svgH}`} style={{ width: "100%", minWidth: 760, height: "auto" }}>
           <defs>
             <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
               <path d="M0,0 L6,3 L0,6" fill="none" stroke="#9ca3af" strokeWidth="1.2" />
@@ -76,7 +81,7 @@ export default function MarketSpine({
             );
           })}
 
-          <text x={480} y={185} textAnchor="middle" fontSize="9.5" fill="#777">
+          <text x={480} y={legendY} textAnchor="middle" fontSize="9.5" fill="#5c6672">
             green = live/launched · orange = announced/pending · gray = watch · flow: spot liquidity → benchmarks → listed price risk
           </text>
         </svg>
