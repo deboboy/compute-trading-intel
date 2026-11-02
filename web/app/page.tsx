@@ -54,7 +54,7 @@ export default function Home() {
   const [data, setData] = useState<Data | null>(null);
   const [err, setErr] = useState(false);
   useEffect(() => {
-    fetch("/compute-trading.json")
+    fetch("/cti/compute-trading.json")
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then(setData)
       .catch(() => setErr(true));
