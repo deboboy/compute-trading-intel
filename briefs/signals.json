@@ -1,6 +1,27 @@
 [
  {
-  "claim": "CFTC RFC on compute derivatives (docket CFTC-2026-1850) closed 2026-10-20 with 107 comments published; docket status Closed for Comments",
+  "claim": "Hyperbolic raised $30M strategic round (2026-10-27/29) to build a global AI compute grid aggregating idle GPUs across hundreds of cloud providers; led by Walden Catalyst (co-founded by Intel CEO Lip-Bu Tan)",
+  "source": "TechStartups (secondary)",
+  "url": "https://techstartups.com/2026/10/27/hyperbolic-raises-30m-to-build-global-ai-compute-grid-backed-by-intel-ceo-lip-bu-tans-vc-firm/",
+  "confidence": "medium",
+  "run_date": "2026-11-02"
+ },
+ {
+  "claim": "Public neocloud stocks fell more than 30% in October 2026 amid AI-buildout sentiment concerns — relevant overhang for private GPU-collateral credit pricing",
+  "source": "The Motley Fool",
+  "url": "https://www.fool.com/investing/2026/10/29/neocloud-stocks-have-sunk-by-more-than-30-this-mon/",
+  "confidence": "medium",
+  "run_date": "2026-11-02"
+ },
+ {
+  "claim": "CME compute futures: launch still postponed pending regulatory review; no publicly reported volume/open-interest figures as of 2026-11-02",
+  "source": "Compute Futures Data timeline",
+  "url": "https://computefuturesdata.com/learn/compute-futures-timeline/",
+  "confidence": "medium",
+  "run_date": "2026-11-02"
+ },
+ {
+  "claim": "CFTC RFC on compute derivatives (docket CFTC-2026-1850) closed 2026-10-20 with 107 comments published; no Commission decision as of 2026-11-02",
   "source": "Regulations.gov (primary)",
   "url": "https://www.regulations.gov/docket/CFTC-2026-1850",
   "confidence": "high",
@@ -35,38 +56,10 @@
   "run_date": "2026-10-26"
  },
  {
-  "claim": "CME compute futures volume/open interest: no publicly reported figures as of 2026-10-26; liquidity remains the validation metric",
-  "source": "absence of public data",
-  "url": null,
-  "confidence": "low",
-  "run_date": "2026-10-26"
- },
- {
-  "claim": "ICE x Ornn GPU compute futures remain announced but not launched as of 2026-10-26",
-  "source": "no-change confirmation",
-  "url": null,
-  "confidence": "low",
-  "run_date": "2026-10-26"
- },
- {
-  "claim": "Spot marketplaces: no material pricing, capacity, or consolidation moves week of 2026-10-26",
-  "source": "no-change confirmation",
-  "url": null,
-  "confidence": "low",
-  "run_date": "2026-10-26"
- },
- {
   "claim": "Compute futures listed and began trading on NYMEX (2026-10-05): Silicon Data H100 and B200 Rental Index futures, one month's rent per contract",
   "source": "AGI Watch (secondary; CME SER-9785 primary)",
   "url": "https://agiwatch.ai/signals/sig-2026-10-05-cme-launches-gpu-compute-futures",
   "confidence": "high",
-  "run_date": "2026-10-19"
- },
- {
-  "claim": "First-week volume/open interest on CME compute futures not yet publicly reported; liquidity is the validation metric",
-  "source": "absence of public data",
-  "url": null,
-  "confidence": "low",
   "run_date": "2026-10-19"
  },
  {
@@ -151,13 +144,6 @@
   "source": "Stanford Tech Review",
   "url": "https://stanfordtechreview.com/articles/what-is-gpu-collateralized-debt-nvidia-500b",
   "confidence": "medium",
-  "run_date": "2026-10-19"
- },
- {
-  "claim": "Spot marketplaces (Vast.ai, VoltagePark, SF Compute, RunPod, Hyperbolic, et al.): no material moves week of 2026-10-19",
-  "source": "no-change confirmation",
-  "url": null,
-  "confidence": "low",
   "run_date": "2026-10-19"
  }
 ]
