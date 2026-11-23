@@ -1,57 +1,71 @@
 [
  {
-  "claim": "Derivatives no-change: the CFTC's review of NYMEX/CME Silicon Data H100 (GPU1) and B200 (GPU2) compute futures remains extended to 2027-01-08, and no rival registrant self-certified, obtained approval for, or listed a comparable contract this week (which would have voided the extension and let CME move earlier)",
-  "source": "CFTC product record 62544 (primary) + CCIR compute-derivatives timeline (updated 2026-11-14)",
+  "claim": "Kalshi (a CFTC-registered exchange) is working with index provider Compute Desk to launch GPU compute futures - GPU rental contracts plus perpetual futures - with no confirmed launch date or final specs and products still subject to regulatory requirements; Kalshi had delisted its compute-power prediction market in August 2026",
+  "source": "Bloomberg (2026-11-18) + secondary confirmations",
+  "url": "https://www.bloomberg.com/news/articles/2026-11-18/kalshi-turns-to-compute-desk-in-renewed-push-for-gpu-futures",
+  "confidence": "medium",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "First OTC option on GPU prices: Architect (through its CFTC-registered introducing-broker affiliate) and Luxor (as swap counterparty) executed a one-year put for Hyperbolic hedging ~$5M of future Nvidia B200 rental revenue, settled monthly against Silicon Data's B200 Rental Price Index (2026-11-17)",
+  "source": "AI Brief + company statements (2026-11-17)",
+  "url": "https://dailyaibrief.com/news/hyperbolic-hedges-nvidia-b200-rental-revenue-ZEMNYSRw",
+  "confidence": "high",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "Akash (Overclock Labs) unveiled Akash Forwards, a commodity-style forward market for physical-delivery GPU hours (8x B300, H200, RTX Pro 6000) with price fixed at purchase; certified-participant pilot Q1 2027, public launch Q2 2027 - the first on-chain GPU-hour forward order book",
+  "source": "Business Wire / Akash press release (primary, 2026-11-17)",
+  "url": "https://www.businesswire.com/news/home/20261117651222/en/Akash-Unveils-Akash-Forwards-Bringing-Commodity-Style-Forward-Trading-to-AI-Compute",
+  "confidence": "high",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "Compute Desk (the Compute Index, Inc.) raised a $45M seed led by Lightspeed Venture Partners, with Menlo Ventures, Hedosophia, Motive Partners, Crucible, Inovia, Soma, Mythos, Blue Wire, Firesteak and Drysdale participating, to build compute pricing and clearing (Compute Signal data, Compute Trader liquidity, Compute Clear physical settlement)",
+  "source": "multiple outlets (2026-11-17/18)",
+  "url": "https://theindustryspread.com/compute-desk-raises-seed-to-clear-gpu-risk",
+  "confidence": "high",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "ETF issuers are racing to create funds that track compute-futures contracts on AI costs, positioning for launch ahead of regulatory approval while exchanges await CFTC sign-off",
+  "source": "Bloomberg (2026-11-20)",
+  "url": "https://www.bloomberg.com/news/features/2026-11-20/etf-issuers-race-to-create-funds-to-track-compute-futures-contracts-on-ai-costs",
+  "confidence": "medium",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "H100 index divergence re-widened: Silicon Data SDH100RT $3.10/GPU-hr vs Ornn OCPI-H100 $2.91 on 2026-11-22 - about 6.5% apart, reversing the ~1.3% convergence of 2026-11-15 (Ornn H100 -4.9% on the week, -7.6% over 30 days)",
+  "source": "Silicon Data H100 index (primary, 2026-11-22) + Ornn OCPI (primary, 2026-11-22)",
+  "url": "https://www.silicondata.com/products/silicon-index",
+  "confidence": "high",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "B200 softened across benchmarks: Ornn OCPI-B200 $9.08/GPU-hr (2026-11-22; -6.0% 7-day, -5.3% 30-day), Silicon Data B200 $6.94; Compute Desk 1-year-reserved readings were B300 $7.21, B200 $6.06, H200 $3.52, H100 $2.90 (2026-11-18)",
+  "source": "Ornn (primary) + Silicon Data (primary) + Compute Desk (primary)",
+  "url": "https://data.ornn.com/markets/compare/h100-sxm-vs-b200",
+  "confidence": "high",
+  "run_date": "2026-11-23"
+ },
+ {
+  "claim": "Derivatives no-change: CFTC product record 62544 (NYMEX Silicon Data H100 Rental Index Futures) remains 'Approval Pending (90)', with the review extended to 2027-01-08 and conditioned on no other registrant self-certifying, obtaining approval, or listing comparable contracts; ICE x Ornn (index data live since 2026-10-05), Nodal x Compute Desk and Architect's US venue remain unlaunched",
+  "source": "CFTC product record 62544 (primary) + ICE exchange notice (2026-09-29)",
   "url": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizationProducts/62544",
   "confidence": "high",
-  "run_date": "2026-11-16"
+  "run_date": "2026-11-23"
  },
  {
-  "claim": "H100 index convergence: Silicon Data's SDH100RT rose to $3.10/GPU-hr on 2026-11-15 (7-day +9.9%) while Ornn's OCPI-H100 fell to $3.06 the same date (7-day -4.08%) - the two flagship H100 benchmarks now sit ~1.3% apart, versus the ~12% gap cited a week earlier as the CFTC's reason to wait",
-  "source": "Silicon Data H100 index (primary, 2026-11-15) + Ornn OCPI (primary, 2026-11-15)",
-  "url": "https://www.silicondata.com/products/silicon-index/h100",
-  "confidence": "high",
-  "run_date": "2026-11-16"
- },
- {
-  "claim": "B200 on-demand surge and residual divergence: Ornn OCPI-B200 printed $9.66/GPU-hr on 2026-11-15 (~$9.72 on 2026-11-13), up ~23% over 30 days, while Compute Desk's 1-year-reserved DESKB200 reading sits far lower at $5.64 - much of the index spread has migrated to the newer chip",
-  "source": "Ornn GPU analytics (primary) + Compute Desk indexes (primary)",
-  "url": "https://data.ornn.com/analytics/gpu",
+  "claim": "Capital/credit layer: Marble launched with an $11M seed led by Polychain (2026-11-10) for compute private credit and OTC forwards; USD.AI led a $106M senior secured facility for NexGen Cloud (216 HGX B300 servers, 1,728 GPUs, Finland; 2026-11-03) through its GPU Loan Exchange; Blue Owl (Citi summit, 2026-11-10) noted neocloud unsecured bonds widened 400-500bps while GPU-financing pricing moved only 50-75bps",
+  "source": "ABF Journal + PR Newswire + USD.AI blog (2026-11)",
+  "url": "https://www.abfjournal.com/usd-ai-leads-106mm-gpu-financing-for-nexgen-cloud",
   "confidence": "medium",
-  "run_date": "2026-11-16"
+  "run_date": "2026-11-23"
  },
  {
-  "claim": "USDai and sUSDai (USD.AI) went live on Bullish Exchange across four trading pairs on 2026-11-12, giving GPU-backed credit tokens secondary-market distribution and price discovery; follows Bullish's $100M stablecoin facility for USD.AI (2026-08-28)",
-  "source": "CoinDesk press release (2026-11-12)",
-  "url": "https://www.coindesk.com/press-release/2026/11/12/usdai-and-susdai-are-now-live-on-bullish-exchange",
-  "confidence": "medium",
-  "run_date": "2026-11-16"
- },
- {
-  "claim": "GPU-secured debt tracker now shows $74B signed across 53 deals (as of 2026-11-14); recent transactions include USD.AI's $106M senior secured term loan for NexGen Cloud (216 B300 servers, Finland; 2026-10-29) and USD.AI's GPU Loan Exchange (GLX) launch (2026-10-01, $98M Duos Edge AI)",
-  "source": "CCIR GPU Debt Tracker (secondary) + USD.AI/PRNewswire (primary)",
-  "url": "https://ccir.io/credit",
-  "confidence": "medium",
-  "run_date": "2026-11-16"
- },
- {
-  "claim": "Derivatives no-change: ICE x Ornn OCPI H100 (HPR) / B200 (BKL), Nodal Exchange x Compute Desk, and Architect's US innovation exchange all remain announced-but-unlaunched, with no new filing, listing date, or CFTC update found this week",
-  "source": "no-change confirmation (ICE notice 2026-09-29; Nodal 2026-09-03)",
-  "url": "https://www.ice.com/publicdocs/futures_us/exchange_notices/ICE_Futures_US_Exchange_Notice_ORNN_Compute_4Q2026_20260929.pdf",
-  "confidence": "low",
-  "run_date": "2026-11-16"
- },
- {
-  "claim": "Spot layer no-change on pricing/consolidation, but marketplace mechanics kept evolving: Shadeform launched Flex VMs (virtualizing bare-metal GPU clusters into single-tenant, marketplace-listable VMs; 2026-11-04) and Vast.ai reported 650k+ GPU rentals in the 30 days ended 2026-10-14 across 2,500+ providers and 34,000 customer accounts",
-  "source": "The Data Center Engineer (2026-11-04) + Vast.ai (2026-10-20)",
-  "url": "https://thedatacenterengineer.com/news/flex-vms-virtualize-bare-metal-gpu-clusters-into-single-tenant-vms-on-shadeform",
-  "confidence": "medium",
-  "run_date": "2026-11-16"
- },
- {
-  "claim": "NYMEX (CME Group) voluntarily consented to a further 60-day CFTC review extension for its Silicon Data H100 (GPU1) and B200 (GPU2) compute futures, moving the decision date from 2026-11-09 to 2027-01-08; the extension is conditioned on no other CFTC registrant self-certifying, obtaining approval, or listing a comparable contract (an earlier date would control)",
-  "source": "CME Group rule filing, Submission 26-370 (primary, 2026-11-04)",
-  "url": "https://www.cmegroup.com/content/dam/cmegroup/market-regulation/rule-filings/2026/8/26-370_1.pdf",
+  "claim": "NYMEX (CME Group) voluntarily consented to a further 60-day CFTC review extension for its Silicon Data H100 (GPU1) and B200 (GPU2) compute futures, moving the decision date to 2027-01-08; the extension is conditioned on no other CFTC registrant self-certifying, obtaining approval, or listing a comparable contract (an earlier date would control)",
+  "source": "CME Group/NYMEX filing to CFTC (primary, 2026-11-04)",
+  "url": "https://www.cftc.gov/filings/documents/2026/orgdcmnymexvolexten261105.pdf",
   "confidence": "high",
   "run_date": "2026-11-12"
  },
@@ -126,16 +140,9 @@
   "run_date": "2026-10-19"
  },
  {
-  "claim": "Prime Intellect raised a $130M Series A led by Radical Ventures (with Nvidia Ventures, Intel Capital, Dell Technologies Capital), valuing it at ~$1B and bringing total funding past $150M (July 2026)",
-  "source": "Intel Capital (secondary)",
-  "url": "https://www.intelcapital.com/prime-intellect-raises-130m-series-a-to-build-the-open-superintelligence-stack/",
-  "confidence": "medium",
-  "run_date": "2026-10-19"
- },
- {
-  "claim": "Architect Financial Technologies acquired a US Designated Contract Market (IMX Health) to launch the American Innovation Exchange, a CFTC-regulated venue for compute and AI-supply-chain futures/options; its AX exchange already trades compute perpetuals outside the US",
-  "source": "Architect / PR Newswire (primary, 2026-05-28)",
-  "url": "https://architect.co/ai-exchange/",
+  "claim": "Architect Financial Technologies acquired a US Designated Contract Market (IMX Health) to launch the American Innovation Exchange, a CFTC-regulated venue for compute and AI-supply-chain futures/options; its compute products (H100/H200/B200/B300, Compute Desk indexes) remain pending approval while FX and metals trade live on Bitnomial's DCM",
+  "source": "Architect FAQ (primary) + PR Newswire (2026-05-28)",
+  "url": "https://architect.co/exchange/faq/",
   "confidence": "high",
   "run_date": "2026-10-19"
  },

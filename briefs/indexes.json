@@ -1,6 +1,6 @@
 [
- {"name": "Silicon Data", "partner_exchange": "CME Group", "note": "Settlement source for CME H100/B200 compute futures; $30M Series A"},
- {"name": "Ornn (OCPI)", "partner_exchange": "Architect / AI Exchange", "note": "First sustained compute benchmark; $5.7M seed"},
- {"name": "Compute Desk", "partner_exchange": "Nodal Exchange", "note": "Blended daily indexes from exclusive private-transaction coverage"},
+ {"name": "Silicon Data", "partner_exchange": "CME Group (NYMEX)", "note": "Settlement source for the pending CME/NYMEX H100 (GPU1) and B200 (GPU2) compute futures; $30.5M Series A (Aug 2026)"},
+ {"name": "Ornn (OCPI)", "partner_exchange": "ICE", "note": "Volume-weighted, winsorized daily settles from transacted neocloud deals (OCPI-H100/H200/B200); ICE GPU compute futures announced 2026-05-19, still unlaunched"},
+ {"name": "Compute Desk", "partner_exchange": "Nodal Exchange / Architect / Kalshi", "note": "Blended daily indexes from exclusive private-transaction coverage; raised $45M seed led by Lightspeed (2026-11-17); Kalshi futures partnership reported 2026-11-18"},
  {"name": "SemiAnalysis", "partner_exchange": null, "note": "Monthly H100 1-yr contract survey index, 100+ participants"}
 ]
