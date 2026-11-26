@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Last Myle">
+  <!-- Full-bleed red field (no transparent corners) so the tab icon pops on light and dark chrome -->
+  <rect width="32" height="32" fill="#E11D2E"/>
+  <g fill="#FFFFFF" transform="translate(5.5 4) scale(0.52)">
+    <path d="M4 8 L20 24 L4 40 L8 40 L24 24 L8 8 Z"/>
+    <path d="M20 8 L36 24 L20 40 L24 40 L40 24 L24 8 Z"/>
+  </g>
+</svg>
